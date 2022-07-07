@@ -1,0 +1,127 @@
+{
+    "@odata.context": "https://udacitycogsearch.search.windows.net/$metadata#skillsets/$entity",
+    "@odata.etag": "\"0x8DA5F4F1ADCD725\"",
+    "name": "adlsgen2-library-skillset",
+    "description": "Skillset created from the portal. skillsetName: adlsgen2-library-skillset; contentField: merged_content; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+    "skills": [
+      {
+        "@odata.type": "#Microsoft.Skills.Text.V3.EntityRecognitionSkill",
+        "name": "#1",
+        "description": null,
+        "context": "/document/merged_content",
+        "categories": [
+          "Product",
+          "PhoneNumber",
+          "Person",
+          "Quantity",
+          "Organization",
+          "IPAddress",
+          "URL",
+          "Email",
+          "Event",
+          "Skill",
+          "Location",
+          "PersonType",
+          "Address",
+          "DateTime"
+        ],
+        "defaultLanguageCode": "en",
+        "minimumPrecision": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/merged_content"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "persons",
+            "targetName": "library_people"
+          },
+          {
+            "name": "organizations",
+            "targetName": "library_organizations"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+        "name": "#2",
+        "description": null,
+        "context": "/document/merged_content",
+        "defaultLanguageCode": "en",
+        "maxKeyPhraseCount": null,
+        "modelVersion": null,
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/merged_content"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "keyPhrases",
+            "targetName": "library_keyphrases"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Text.MergeSkill",
+        "name": "#3",
+        "description": null,
+        "context": "/document",
+        "insertPreTag": " ",
+        "insertPostTag": " ",
+        "inputs": [
+          {
+            "name": "text",
+            "source": "/document/content"
+          },
+          {
+            "name": "itemsToInsert",
+            "source": "/document/normalized_images/*/text"
+          },
+          {
+            "name": "offsets",
+            "source": "/document/normalized_images/*/contentOffset"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "mergedText",
+            "targetName": "merged_content"
+          }
+        ]
+      },
+      {
+        "@odata.type": "#Microsoft.Skills.Vision.OcrSkill",
+        "name": "#4",
+        "description": null,
+        "context": "/document/normalized_images/*",
+        "textExtractionAlgorithm": null,
+        "lineEnding": "Space",
+        "defaultLanguageCode": "en",
+        "detectOrientation": true,
+        "inputs": [
+          {
+            "name": "image",
+            "source": "/document/normalized_images/*"
+          }
+        ],
+        "outputs": [
+          {
+            "name": "text",
+            "targetName": "text"
+          },
+          {
+            "name": "layoutText",
+            "targetName": "layoutText"
+          }
+        ]
+      }
+    ],
+    "cognitiveServices": null,
+    "knowledgeStore": null,
+    "encryptionKey": null
+  }

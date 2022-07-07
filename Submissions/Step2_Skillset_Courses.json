@@ -1,0 +1,36 @@
+{
+  "@odata.context": "https://udacitycogsearch.search.windows.net/$metadata#skillsets/$entity",
+  "@odata.etag": "\"0x8DA5F4A0E8535FC\"",
+  "name": "azuretable-course-skillset",
+  "description": "Skillset created from the portal. skillsetName: azuretable-course-skillset; contentField: description; enrichmentGranularity: document; knowledgeStoreStorageAccount: ;",
+  "skills": [
+    {
+      "@odata.type": "#Microsoft.Skills.Text.KeyPhraseExtractionSkill",
+      "name": "#1",
+      "description": null,
+      "context": "/document/description",
+      "defaultLanguageCode": "en",
+      "maxKeyPhraseCount": null,
+      "modelVersion": null,
+      "inputs": [
+        {
+          "name": "text",
+          "source": "/document/description"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "keyPhrases",
+          "targetName": "course_keyphrases"
+        }
+      ]
+    }
+  ],
+  "cognitiveServices": {
+    "@odata.type": "#Microsoft.Azure.Search.CognitiveServicesByKey",
+    "description": "/subscriptions/ab654f6b-671d-43a5-b244-bde3d88496a9/resourceGroups/Udacity_proj3/providers/Microsoft.CognitiveServices/accounts/course-cog-services",
+    "key": "3759201adc15461ca9ed54f14a307ce6"
+  },
+  "knowledgeStore": null,
+  "encryptionKey": null
+}

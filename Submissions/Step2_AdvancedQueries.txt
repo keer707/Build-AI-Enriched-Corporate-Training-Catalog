@@ -1,0 +1,130 @@
+1) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=*&%24filter=rating_average%20gt%204.9&%24select=title%2Cduration%2Crating_average
+
+{
+  "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)",
+  "value": [
+    {
+      "@search.score": 1,
+      "duration": "63",
+      "rating_average": 4.91,
+      "title": "Create an Azure Cognitive Search solution"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "63",
+      "rating_average": 4.91,
+      "title": "Create an Azure Cognitive Search solution"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "63",
+      "rating_average": 4.91,
+      "title": "Create an Azure Cognitive Search solution"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    },
+    {
+      "@search.score": 1,
+      "duration": "38",
+      "rating_average": 5,
+      "title": "Get started with Git and GitHub in Visual Studio"
+    }
+  ]
+}
+
+=======================================================================================================================================
+
+2) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=Cognitive%2BSearch&facet=role&searchFields=title&%24select=title%2Crole%2Csource
+
+{ "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)", "@search.facets": { "role": [ { "count": 7, "value": "developer" }, { "count": 5, "value": "ai-engineer" }, { "count": 5, "value": "solution-architect" } ] }, "value": [ { "@search.score": 6.890731, "role": "ai-engineer", "source": "MS Learn", "title": "Create an Azure Cognitive Search solution" }, { "@search.score": 6.615961, "role": "developer", "source": "MS Learn", "title": "Introduction to Azure Cognitive Search" }, { "@search.score": 6.427953, "role": "developer", "source": "MS Learn", "title": "Introduction to Azure Cognitive Search" }, { "@search.score": 5.9197707, "role": "solution-architect", "source": "MS Learn", "title": "Create an Azure Cognitive Search solution" }, { "@search.score": 5.7445745, "role": "developer", "source": "MS Learn", "title": "Create an Azure Cognitive Search solution" }, { "@search.score": 5.6990314, "role": "ai-engineer", "source": "MS Learn", "title": "Create a knowledge store with Azure Cognitive Search" }, { "@search.score": 5.6990314, "role": "solution-architect", "source": "MS Learn", "title": "Create a knowledge store with Azure Cognitive Search" }, { "@search.score": 5.391579, "role": "solution-architect", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.883527, "role": "developer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.5025353, "role": "ai-engineer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.5025353, "role": "ai-engineer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.4189005, "role": "developer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.4189005, "role": "solution-architect", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.4189005, "role": "developer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 4.4189005, "role": "ai-engineer", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 3.9621072, "role": "solution-architect", "source": "MS Learn", "title": "Create a custom skill for Azure Cognitive Search" }, { "@search.score": 3.9621072, "role": "developer", "source": "MS Learn", "title": "Create a knowledge store with Azure Cognitive Search" } ] }
+
+==================================================================================================================================
+
+3) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=big%20data&facet=source&searchFields=title&%24select=title%2Crole%2Csource%2Clevel%20
+
+{ "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)", "@search.facets": { "source": [ { "count": 7, "value": "MS Learn" }, { "count": 5, "value": "Udacity" } ] }, "value": [ { "@search.score": 4.948776, "level": "Advanced", "role": " Data Architect ", "source": "Udacity", "title": "Data Architect" }, { "@search.score": 4.9419026, "level": "intermediate", "role": " data analytics, executive leadership ", "source": "Udacity", "title": "Data Visualization" }, { "@search.score": 4.744108, "level": "intermediate", "role": "Data Engineer ", "source": "Udacity", "title": "Data Streaming " }, { "@search.score": 4.4678464, "level": "Intermediate", "role": "data product manager", "source": "Udacity", "title": "Data Product Manager " }, { "@search.score": 4.2773066, "level": "beginner", "role": "N/A", "source": "Udacity", "title": "Data Structures and Algorithms" }, { "@search.score": 4.273298, "level": "beginner", "role": "data-scientist", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 4.0956697, "level": "beginner", "role": "student", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.6703665, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "role": "student", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "role": "data-scientist", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" } ] }
+
+=================================================================================================================================
+
+4) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=big%20data&facet=level&searchFields=title&%24select=title%2Crole%2Csource%2Clevel%20
+
+{ "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)", "@search.facets": { "level": [ { "count": 5, "value": "beginner" }, { "count": 5, "value": "intermediate" }, { "count": 1, "value": "Advanced" }, { "count": 1, "value": "Intermediate" } ] }, "value": [ { "@search.score": 4.948776, "level": "Advanced", "role": " Data Architect ", "source": "Udacity", "title": "Data Architect" }, { "@search.score": 4.9419026, "level": "intermediate", "role": " data analytics, executive leadership ", "source": "Udacity", "title": "Data Visualization" }, { "@search.score": 4.744108, "level": "intermediate", "role": "Data Engineer ", "source": "Udacity", "title": "Data Streaming " }, { "@search.score": 4.4678464, "level": "Intermediate", "role": "data product manager", "source": "Udacity", "title": "Data Product Manager " }, { "@search.score": 4.2773066, "level": "beginner", "role": "N/A", "source": "Udacity", "title": "Data Structures and Algorithms" }, { "@search.score": 4.273298, "level": "beginner", "role": "data-scientist", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 4.0956697, "level": "beginner", "role": "student", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.6703665, "level": "intermediate", "role": "data-scientist", "source": "MS Learn", "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "role": "student", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "role": "data-scientist", "source": "MS Learn", "title": "Work with Data in Azure Machine Learning" } ] }
+
+
+========================================================================================================================================
+
+5) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=big%20data&facet=level&searchFields=title&%24select=title%2Clevel%2Crating_average&%24orderby=rating_average
+
+{ "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)", "@search.facets": { "level": [ { "count": 5, "value": "beginner" }, { "count": 5, "value": "intermediate" }, { "count": 1, "value": "Advanced" }, { "count": 1, "value": "Intermediate" } ] }, "value": [ { "@search.score": 4.948776, "level": "Advanced", "rating_average": null, "title": "Data Architect" }, { "@search.score": 4.4678464, "level": "Intermediate", "rating_average": null, "title": "Data Product Manager " }, { "@search.score": 4.744108, "level": "intermediate", "rating_average": 4.2, "title": "Data Streaming " }, { "@search.score": 4.9419026, "level": "intermediate", "rating_average": 4.6, "title": "Data Visualization" }, { "@search.score": 4.2773066, "level": "beginner", "rating_average": 4.6, "title": "Data Structures and Algorithms" }, { "@search.score": 4.273298, "level": "beginner", "rating_average": 4.66, "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 4.0956697, "level": "beginner", "rating_average": 4.66, "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "rating_average": 4.66, "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "rating_average": 4.66, "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "rating_average": 4.8, "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "rating_average": 4.8, "title": "Monitor data drift with Azure Machine Learning" }, { "@search.score": 3.6703665, "level": "intermediate", "rating_average": 4.8, "title": "Monitor data drift with Azure Machine Learning" } ] }
+
+==============================================================================================================================
+
+6) https://udacitycogsearch.search.windows.net/indexes/azuretable-course-index/docs?api-version=2021-04-30-Preview&search=big%20data&facet=level&searchFields=title&%24select=title%2Crole%2Clevel%2Crating_average%2Crating_count&%24orderby=rating_count%20desc&%24top=5
+
+{ "@odata.context": "https://udacitycogsearch.search.windows.net/indexes('azuretable-course-index')/$metadata#docs(*)", "@search.facets": { "level": [ { "count": 5, "value": "beginner" }, { "count": 5, "value": "intermediate" }, { "count": 1, "value": "Advanced" }, { "count": 1, "value": "Intermediate" } ] }, "value": [ { "@search.score": 4.273298, "level": "beginner", "rating_average": 4.66, "rating_count": 1119, "role": "data-scientist", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 4.0956697, "level": "beginner", "rating_average": 4.66, "rating_count": 1119, "role": "student", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "rating_average": 4.66, "rating_count": 1119, "role": "student", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.4522018, "level": "beginner", "rating_average": 4.66, "rating_count": 1119, "role": "data-scientist", "title": "Work with Data in Azure Machine Learning" }, { "@search.score": 3.7491212, "level": "intermediate", "rating_average": 4.8, "rating_count": 814, "role": "data-scientist", "title": "Monitor data drift with Azure Machine Learning" } ] }
+
+================================================================================================================================

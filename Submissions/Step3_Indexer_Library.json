@@ -1,0 +1,76 @@
+{
+    "@odata.context": "https://udacitycogsearch.search.windows.net/$metadata#indexers/$entity",
+    "@odata.etag": "\"0x8DA600ADABBCFA8\"",
+    "name": "adlsgen2-library-indexer",
+    "description": "",
+    "dataSourceName": "librarydatasource",
+    "skillsetName": "adlsgen2-library-skillset",
+    "targetIndexName": "adlsgen2-library-index",
+    "disabled": null,
+    "schedule": null,
+    "parameters": {
+      "batchSize": null,
+      "maxFailedItems": 0,
+      "maxFailedItemsPerBatch": 0,
+      "base64EncodeKeys": null,
+      "configuration": {
+        "imageAction": "generateNormalizedImages",
+        "dataToExtract": "contentAndMetadata",
+        "parsingMode": "default"
+      }
+    },
+    "fieldMappings": [
+      {
+        "sourceFieldName": "metadata_storage_path",
+        "targetFieldName": "metadata_storage_path",
+        "mappingFunction": {
+          "name": "base64Encode",
+          "parameters": null
+        }
+      }
+    ],
+    "outputFieldMappings": [
+      {
+        "sourceFieldName": "/document/merged_content/library_people",
+        "targetFieldName": "library_people"
+      },
+      {
+        "sourceFieldName": "/document/merged_content/library_organizations",
+        "targetFieldName": "library_organizations"
+      },
+      {
+        "sourceFieldName": "/document/merged_content/library_keyphrases",
+        "targetFieldName": "library_keyphrases"
+      },
+      {
+        "sourceFieldName": "/document/merged_content",
+        "targetFieldName": "merged_content"
+      },
+      {
+        "sourceFieldName": "/document/normalized_images/*/text",
+        "targetFieldName": "text"
+      },
+      {
+        "sourceFieldName": "/document/normalized_images/*/layoutText",
+        "targetFieldName": "layoutText"
+      },
+      {
+        "sourceFieldName": "/document/publicationName",
+        "targetFieldName": "publication_name"
+      },
+      {
+        "sourceFieldName": "/document/publisher",
+        "targetFieldName": "publisher"
+      },
+      {
+        "sourceFieldName": "/document/doi",
+        "targetFieldName": "doi"
+      },
+      {
+        "sourceFieldName": "/document/publicationDate",
+        "targetFieldName": "publication_date"
+      }
+    ],
+    "cache": null,
+    "encryptionKey": null
+  }

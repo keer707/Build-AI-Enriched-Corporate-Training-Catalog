@@ -1,0 +1,13 @@
+1. Users can search Course Data by keywords and phrases from title and descriptions.
+2. Users can filter Course Data by ratings / duration.
+3. Users can search for built-in lookup skill enriched data of course instuctors profiles.
+4. Users can facet Course Data by source & type.
+5. Users can facet Course Data by skills(product/technology).
+6. Users can facet Course Data by role.
+7. Users can facet Course Data by level.
+8. Users can sort Course Data by rating and rating count.
+9. Users can search the Curated Library for papers by keywords and phrases, authors, and their associated institutions.
+10.Users can search the custom enriched data of Curated Library for papers by publication name.
+11.Users can search the custom enriched data of Curated Library for papers by publisher.
+12.Users can search the custom enriched data of Curated Library for papers by published date.
+13.Users can retrieve custom enriched data - DOI (Digital Object Identifier) URL for the file in Curated Library as part of the search result.
